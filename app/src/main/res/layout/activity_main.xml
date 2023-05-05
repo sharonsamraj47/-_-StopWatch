@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="#474242">
+
+    <Chronometer
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:textColor="@color/white"
+        android:layout_margin="4dp"
+        android:textSize="30sp" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/button"
+        android:layout_width="106dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#1C1B1B"
+        android:onClick="starttime"
+        android:text="START"
+        android:textColor="#E41212"
+        android:layout_margin="4dp"
+        app:cornerRadius="36dp"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="313dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="105dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#1C1B1B"
+        android:onClick="stoptime"
+        android:text="HOLD"
+        android:textColor="#E41212"
+        android:layout_margin="4dp"
+        app:cornerRadius="36dp"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="371dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button3"
+        android:layout_width="102dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#1C1B1B"
+        android:onClick="holdtime"
+        android:text="RESET"
+        android:textColor="#E41212"
+        android:layout_margin="4dp"
+        app:cornerRadius="36dp"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="430dp" />
+</LinearLayout>
